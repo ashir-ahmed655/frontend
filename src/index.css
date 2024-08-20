@@ -1,0 +1,30 @@
+* {
+  font-family: "roobert" !important;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+@font-face {
+  font-family: roobert;
+
+  src: url(https://static1.squarespace.com/static/61805088a13441018ea5ff98/t/6290c9c83b09d5791eaabc09/1653656008106/Roobert-Regular.otf);
+}
+
+@tailwind base;
+
+@layer base {
+  html {
+    @apply text-neutral-800;
+  }
+  html.dark {
+    @apply text-neutral-50;
+    @apply bg-neutral-800;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
