@@ -182,7 +182,7 @@ function DragDropImageUploader() {
         const formData = new FormData();
         files.forEach(file => formData.append('files', file));
         
-        fetch('http://127.0.0.1:5000/upload', {
+        fetch('http://43.205.241.109/upload', {
             method: 'POST',
             body: formData
         })
